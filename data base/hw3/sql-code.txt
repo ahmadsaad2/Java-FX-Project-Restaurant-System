@@ -1,0 +1,59 @@
+-- Store table
+CREATE TABLE Store (
+  storeId INT PRIMARY KEY,
+  location VARCHAR(255) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  email VARCHAR(255) NOT NULL
+);
+
+-- Employee table
+CREATE TABLE Employee (
+  employeeId INT PRIMARY KEY,
+  storeId INT NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  FOREIGN KEY (storeId) REFERENCES Store(storeId),
+  position VARCHAR(255) NOT NULL,
+  salary number(10) NOT NULL,
+  jobTitle VARCHAR(255) NOT NULL,
+  gender varchar(10)
+);
+
+-- Customer table
+CREATE TABLE Customer (
+  customerId INT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone VARCHAR(20) NOT NULL
+);
+
+-- Product table
+CREATE TABLE Product (
+  productId INT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  category VARCHAR(255) NOT NULL,
+  price DECIMAL(10,2) NOT NULL
+);
+
+-- Order table
+CREATE TABLE Order (
+  orderId INT PRIMARY KEY,
+  storeId INT NOT NULL,
+  customerId INT NOT NULL,
+  orderDate DATE NOT NULL,
+  status VARCHAR(255) NOT NULL,
+  FOREIGN KEY (storeId) REFERENCES Store(storeId),
+  FOREIGN KEY (customerId) REFERENCES Customer(customerId)
+);
+
+-- OrderDetail table
+CREATE TABLE OrderDetail (
+  orderDetailId INT PRIMARY KEY,
+  orderId INT NOT NULL,
+  productId INT NOT NULL,
+  quantity INT NOT NULL,
+  price number(10),
+  FOREIGN KEY (orderId) REFERENCES Order(orderId),
+  FOREIGN KEY (productId) REFERENCES Product(productId)
+);

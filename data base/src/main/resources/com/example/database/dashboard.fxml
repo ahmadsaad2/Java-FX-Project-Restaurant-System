@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="firstA" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="1192.0" styleClass="textfiled-design" stylesheets="@design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.HelloController">
+   <children>
+
+      
+      
+            <AnchorPane fx:id="dash_list" layoutX="5.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="1152.0" stylesheets="@design.css" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <Button fx:id="dash_home" layoutX="43.0" layoutY="107.0" mnemonicParsing="false" onAction="#home" prefHeight="31.0" prefWidth="122.0" styleClass="button1-design" stylesheets="@design.css" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="dsah_about" layoutX="43.0" layoutY="304.0" mnemonicParsing="false" onAction="#about" prefHeight="31.0" prefWidth="122.0" styleClass="button1-design" stylesheets="@design.css" text="About" textFill="WHITE" />
+            <Button fx:id="dash_reports" layoutX="43.0" layoutY="251.0" mnemonicParsing="false" onAction="#report" prefHeight="31.0" prefWidth="122.0" styleClass="button1-design" text="All Reports" textFill="WHITE" />
+            <Button fx:id="dash_exit" layoutX="43.0" layoutY="360.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="122.0" styleClass="button1-design" text="Exit" textFill="WHITE" />
+            <Button fx:id="dash_employee" layoutX="44.0" layoutY="154.0" mnemonicParsing="false" onAction="#inventory" prefHeight="31.0" prefWidth="122.0" styleClass="button1-design" stylesheets="@design.css" text="Inventory" textFill="WHITE" />
+            <Button fx:id="dash_order" layoutX="43.0" layoutY="200.0" mnemonicParsing="false" onAction="#order1" prefHeight="31.0" prefWidth="122.0" styleClass="button1-design" text="Order" textFill="WHITE" />
+            <ImageView fitHeight="28.0" fitWidth="19.0" layoutX="6.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Capture.JPG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="36.0" layoutX="4.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Capture2.JPG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="6.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Capture3.JPG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="22.0" layoutX="10.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Capture4.JPG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="36.0" layoutX="3.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Capture5.JPG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="22.0" layoutX="6.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Capture1.JPG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dash_photo" layoutX="-5.0" layoutY="-1.0" prefHeight="94.0" prefWidth="187.0" styleClass="dash-design" stylesheets="@design.css">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="61.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ds33.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="71.0" layoutY="29.0" prefHeight="45.0" prefWidth="114.0" text="Kfc System" textFill="#632020">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dash_menu" layoutX="182.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="778.0">
+         <children>
+            <ImageView fx:id="image1" fitHeight="488.0" fitWidth="1022.0" layoutX="-6.0" pickOnBounds="true">
+               <image>
+                  <Image url="@cb1eb1162769947.63dad068ec155.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="dash_btnmenu" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#dash_btnmenu" prefHeight="46.0" prefWidth="130.0" styleClass="button13-design" stylesheets="@design.css" text="Our Menu" textOverrun="CENTER_WORD_ELLIPSIS">
+               <textFill>
+                  <LinearGradient endY="0.48106059070789453" startX="0.7196969403461977" startY="0.5075757792501738">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.008075370121130547">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.06829268292682927">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.18169582772543752">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6700620424777599">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button layoutX="940.0" layoutY="14.0" minWidth="42.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="42.0" styleClass="exit">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="14.0" fitWidth="16.0" opacity="0.93" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8-cancel-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <stylesheets>
+                  <URL value="@design.css" />
+                  <URL value="@design.css" />
+               </stylesheets>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="menu" layoutX="175.0" prefHeight="462.0" prefWidth="498.0" styleClass="dash1-design" stylesheets="@design.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" prefHeight="478.0" prefWidth="1015.0" styleClass="textfiled-design" stylesheets="@design.css">
+               <content>
+                  <VBox fx:id="content" styleClass="textfiled-design" stylesheets="@design.css">
+                     <children>
+                        <ImageView fitHeight="299.0" fitWidth="996.0">
+                           <image>
+                              <Image url="@33.JPG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="299.0" fitWidth="996.0">
+                           <image>
+                              <Image url="@36.JPG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="299.0" fitWidth="1004.0">
+                           <image>
+                              <Image url="@35.JPG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="299.0" fitWidth="996.0">
+                           <image>
+                              <Image url="@34.JPG" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+      <AnchorPane fx:id="inventory_dash" layoutX="188.0" layoutY="10.0" prefHeight="420.0" prefWidth="774.0" visible="false">
+         <children>
+            <VBox alignment="CENTER" layoutX="6.0" prefHeight="430.0" prefWidth="946.0" spacing="10.0" styleClass="textfiled-design" stylesheets="@design.css">
+               <children>
+                  <Label text="Inventory Management">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="table" prefHeight="211.0" prefWidth="945.0">
+                     <columns>
+                        <TableColumn fx:id="item" prefWidth="75.0" text="Item" />
+                        <TableColumn fx:id="qunt" prefWidth="75.0" text="Quantity" />
+                        <TableColumn fx:id="price" prefWidth="75.0" text="Price" />
+                        <TableColumn fx:id="supplier" prefWidth="75.0" text="Supplier" />
+                     </columns>
+                  </TableView>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label text="Item Name:">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="itemname" styleClass="textfiled-design" stylesheets="@design.css" />
+                        <Label text="Quantity:">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quant" styleClass="textfiled-design" stylesheets="@design.css" />
+                        <Label text="Price:">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="priceText" styleClass="textfiled-design" stylesheets="@design.css" />
+                        <Label text="Supplier:">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="supp" styleClass="textfiled-design" stylesheets="@design.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button onAction="#onAddItemButtonClicked" prefHeight="30.0" prefWidth="84.0" styleClass="button-design" stylesheets="@design.css" text="Add Item" textFill="WHITE" />
+                        <Button onAction="#onEditButtonClicked" prefHeight="30.0" prefWidth="95.0" styleClass="button-design" stylesheets="@design.css" text="Update Item" textFill="WHITE" translateX="1.0" />
+                        <Button onAction="#deleteItem" prefHeight="37.0" prefWidth="113.0" styleClass="button-design" stylesheets="@design.css" text="Delete Item" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="10.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="order_form" layoutX="183.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="967.0" styleClass="textfiled-design" stylesheets="@design.css" visible="false">
+         <children>
+            <Label layoutX="10.0" layoutY="10.0" text="Order Management" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="350.0" />
+               </padding>
+            </Label>
+            <Button layoutX="180.0" layoutY="390.0" onAction="#addOrder" prefHeight="31.0" prefWidth="84.0" styleClass="button-design" stylesheets="@design.css" text="Add Order" textFill="WHITE" />
+            <Button fx:id="delete_order" layoutX="312.0" layoutY="390.0" onAction="#deleteOrder" prefHeight="31.0" prefWidth="95.0" styleClass="button-design" stylesheets="@design.css" text="Delete Order" textFill="WHITE" />
+            <Button fx:id="order_details" layoutX="438.0" layoutY="390.0" onAction="#orderdetails" prefHeight="31.0" prefWidth="95.0" styleClass="button-design" stylesheets="@design.css" text="Order Details" textFill="WHITE" />
+            <Button fx:id="order_reports" layoutX="568.0" layoutY="390.0" onAction="#print" prefHeight="31.0" prefWidth="95.0" styleClass="button-design" stylesheets="@design.css" text="Order Reports" textFill="WHITE" />
+            <TableView fx:id="table2" editable="true" fixedCellSize="0.0" layoutX="-2.0" layoutY="55.0" prefHeight="261.0" prefWidth="967.0" styleClass="table-cell" stylesheets="@design.css">
+               <columns>
+                  <TableColumn fx:id="orderID" prefWidth="100.0" text="Order Number" />
+                  <TableColumn fx:id="ORDERDATE" prefWidth="100.0" text="Date" />
+                  <TableColumn fx:id="storeID_O" prefWidth="100.0" text="Store Number" />
+                  <TableColumn fx:id="customerID" prefWidth="100.0" text="Customer ID" />
+               </columns>
+            </TableView>
+            <TextField fx:id="ordernum" layoutX="101.0" layoutY="323.0" prefHeight="27.0" prefWidth="142.0" styleClass="textfiled-design" stylesheets="@design.css" />
+            <Label layoutX="10.0" layoutY="329.0" text="Order Number">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="storenum" layoutX="530.0" layoutY="326.0" prefHeight="27.0" prefWidth="142.0" styleClass="textfiled-design" stylesheets="@design.css" />
+            <Label layoutX="252.0" layoutY="332.0" text="Date">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="438.0" layoutY="334.0" text="Store Number">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="customerid" layoutX="767.0" layoutY="326.0" prefHeight="27.0" prefWidth="142.0" styleClass="textfiled-design" stylesheets="@design.css" />
+            <Label layoutX="689.0" layoutY="332.0" text="Customer ID">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="orderdate" layoutX="289.0" layoutY="326.0" prefHeight="27.0" prefWidth="142.0" styleClass="textfiled-design" stylesheets="@design.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="reportform" layoutX="182.0" prefHeight="474.0" prefWidth="1007.0" visible="false">
+         <children>
+            <ImageView fitHeight="478.0" fitWidth="1015.0" pickOnBounds="true">
+               <image>
+                  <Image url="@cv.JPG" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="701.0" layoutY="23.0" prefHeight="148.0" prefWidth="259.0" styleClass="exit3" stylesheets="@design.css">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="76.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Capture1.JPG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="130.0" layoutY="14.0" text="Total Customer">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font></Label>
+                  <Label fx:id="customertotal" layoutX="225.0" layoutY="114.0" text="0.0">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="55.0" layoutY="23.0" prefHeight="148.0" prefWidth="246.0" styleClass="exit3" stylesheets="@design.css">
+               <children>
+                  <Label layoutX="146.0" layoutY="18.0" text="Total Price">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font></Label>
+                  <ImageView fitHeight="47.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Capture3.JPG" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="totalincome" layoutX="189.0" layoutY="114.0" text="0.0">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="365.0" layoutY="23.0" prefHeight="148.0" prefWidth="259.0" styleClass="exit3" stylesheets="@design.css">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="42.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Capture2.JPG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="142.0" layoutY="14.0" text="Total Order">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font></Label>
+                  <Label fx:id="totalorder" layoutX="224.0" layoutY="114.0" text="0.0">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="71.0" layoutY="212.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <BarChart fx:id="createBarChartPane" layoutX="-21.0" layoutY="-13.0" prefHeight="249.0" prefWidth="253.0" styleClass="exit3" stylesheets="@design.css" title="Total Price" AnchorPane.bottomAnchor="-36.0" AnchorPane.leftAnchor="-21.0" AnchorPane.rightAnchor="-32.0" AnchorPane.topAnchor="-13.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="yAxis" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="343.0" layoutY="201.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <AreaChart fx:id="createAreaChartPane" layoutX="21.0" layoutY="-1.0" prefHeight="250.0" prefWidth="259.0" rotate="360.0" styleClass="exit3" stylesheets="@design.css" title="Number Of Order">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </AreaChart>
+               </children>
+            </AnchorPane>
+            <LineChart fx:id="lineChart" layoutX="705.0" layoutY="194.0" prefHeight="262.0" prefWidth="259.0" styleClass="exit3" title="Number of customer">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" stylesheets="@design.css" />
+              </yAxis>
+            </LineChart>
+         </children></AnchorPane>
+      <AnchorPane fx:id="orderdetailsform" layoutX="193.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="967.0" styleClass="textfiled-design" stylesheets="@design.css" visible="false">
+         <children>
+            <Label layoutX="10.0" layoutY="10.0" text="OrderDetails Management" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="350.0" />
+               </padding>
+            </Label>
+            <Button fx:id="add_o" layoutX="365.0" layoutY="420.0" onAction="#add_or" prefHeight="31.0" prefWidth="84.0" styleClass="button-design" stylesheets="@design.css" text="Add Order" textFill="WHITE" />
+            <Button layoutX="488.0" layoutY="420.0" prefHeight="31.0" prefWidth="95.0" styleClass="button-design" stylesheets="@design.css" text="Delete Order" textFill="WHITE" />
+            <TableView fx:id="orderDetailTable" editable="true" fixedCellSize="0.0" layoutX="-2.0" layoutY="55.0" prefHeight="261.0" prefWidth="967.0" styleClass="table-cell" stylesheets="@design.css">
+               <columns>
+                  <TableColumn fx:id="orderDetailId" prefWidth="100.0" text="ORDERDETAILID" />
+                  <TableColumn fx:id="ORDERID2" prefWidth="100.0" text="ORDERID" />
+                  <TableColumn fx:id="PRODUCTID" prefWidth="100.0" text="PRODUCTID" />
+                  <TableColumn fx:id="QUANTITY" prefWidth="100.0" text="QUANTITY" />
+                  <TableColumn fx:id="PRICE" prefWidth="100.0" text="PRICE" />
+               </columns>
+            </TableView>
+            <TextField fx:id="order_det" layoutX="142.0" layoutY="326.0" prefHeight="27.0" prefWidth="142.0" styleClass="textfiled-design" stylesheets="@design.css" />
+            <Label layoutX="28.0" layoutY="332.0" text="ORDERDETAILID">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="product_id" layoutX="673.0" layoutY="326.0" prefHeight="27.0" prefWidth="142.0" styleClass="textfiled-design" stylesheets="@design.css" />
+            <Label layoutX="316.0" layoutY="332.0" text="ORDERID">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="order_i" layoutX="396.0" layoutY="326.0" prefHeight="27.0" prefWidth="130.0" styleClass="textfiled-design" stylesheets="@design.css" />
+            <Label layoutX="580.0" layoutY="332.0" text="PRODUCTID">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="order_quantity" layoutX="602.0" layoutY="373.0" prefHeight="27.0" prefWidth="142.0" styleClass="textfiled-design" stylesheets="@design.css" />
+            <Label layoutX="536.0" layoutY="379.0" text="QUANTITY">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="order_pr" layoutX="336.0" layoutY="373.0" prefHeight="27.0" prefWidth="142.0" styleClass="textfiled-design" stylesheets="@design.css" />
+            <Label layoutX="284.0" layoutY="379.0" text="PRICE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="about_d" layoutX="188.0" layoutY="4.0" prefHeight="478.0" prefWidth="1000.0" visible="false">
+         <children>
+            <ImageView fitHeight="479.0" fitWidth="1000.0" layoutY="-6.0" pickOnBounds="true">
+               <image>
+                  <Image url="@about3.JPG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="476.0" fitWidth="750.0" layoutX="-6.0" layoutY="-5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@about1.JPG" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+
+
+
+
+
+
+
+   </children>
+</AnchorPane>

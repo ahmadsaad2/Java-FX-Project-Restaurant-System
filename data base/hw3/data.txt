@@ -1,0 +1,91 @@
+INSERT INTO Employee (employeeId, storeId, name, title, phone, position, salary, jobTitle, gender)
+VALUES (1001, 1, 'ahmad', 'Manager', '5551234', 'Full-time', 6000, 'Restaurant Manager', 'Male');
+
+INSERT INTO Employee (employeeId, storeId, name, title, phone, position, salary, jobTitle, gender)
+VALUES (1002, 1, 'sara', 'Cashier', '5555678', 'Part-time', 1500, 'Cashier', 'Female');
+
+INSERT INTO Employee (employeeId, storeId, name, title, phone, position, salary, jobTitle, gender)
+VALUES (1003, 1, 'sami', 'Cook', '5552468', 'Full-time', 2000, 'Grill, 'Male');
+
+INSERT INTO Employee (employeeId, storeId, name, title, phone, position, salary, jobTitle, gender)
+VALUES (1004, 2, 'Sarah ', 'Manager', '5551357', 'Full-time', 6500, 'Grill', 'Female');
+
+INSERT INTO Employee (employeeId, storeId, name, title, phone, position, salary, jobTitle, gender)
+VALUES (1005, 2, 'kareem', 'Cashier', '5557890', 'Part-time', 1600, 'Grill', 'Male');
+
+
+INSERT INTO Order (orderId, storeId, customerId, orderDate, status)
+VALUES (101, 1, 17, '2023-03-15', 'PENDING');
+
+INSERT INTO Order (orderId, storeId, customerId, orderDate, status)
+VALUES (102, 1, 11, '2023-03-19', 'PROCESSING');
+
+INSERT INTO Order (orderId, storeId, customerId, orderDate, status)
+VALUES (103, 1, 8, '2023-03-25', 'COMPLETED');
+
+INSERT INTO Order (orderId, storeId, customerId, orderDate, status)
+VALUES (104, 1, 22, '2023-03-27', 'CANCELLED');
+
+INSERT INTO Order (orderId, storeId, customerId, orderDate, status)
+VALUES (105, 1, 31, '2023-04-01', 'ON HOLD');
+
+INSERT INTO Product (productId, name, category, price)
+VALUES (101, 'Zinger Burger', 'Burgers', 4.99);
+
+INSERT INTO Product (productId, name, category, price)
+VALUES (102, 'Twister Wrap', 'Wraps', 5.99);
+
+INSERT INTO Product (productId, name, category, price)
+VALUES (103, 'Popcorn Chicken', 'Sides', 3.99);
+
+INSERT INTO Product (productId, name, category, price)
+VALUES (104, 'Fries', 'Sides', 2.49);
+
+INSERT INTO Product (productId, name, category, price)
+VALUES (105, 'Krusher', 'Beverages', 3.99);
+
+INSERT INTO Customer (customerId, name, email, phone)
+VALUES (101, 'Ahmad ', 'Ahmad@example.com', '555-1234');
+
+INSERT INTO Customer (customerId, name, email, phone)
+VALUES (102, 'kareem', 'kareem@example.com', '555-5678');
+
+INSERT INTO Customer (customerId, name, email, phone)
+VALUES (103, 'saad', 'saad@example.com', '555-2468');
+
+INSERT INTO Customer (customerId, name, email, phone)
+VALUES (104, 'Sarah', 'Sarah@example.com', '555-1357');
+
+INSERT INTO Customer (customerId, name, email, phone)
+VALUES (105, 'kamal', 'kamal@example.com', '555-7890');
+
+
+INSERT INTO Store (storeId, location, phone, email)
+VALUES (1, 'usa', '5551234', 'store1@example.com');
+
+INSERT INTO Store (storeId, location, phone, email)
+VALUES (2, 'ps', '555678', 'store2@example.com');
+
+INSERT INTO Store (storeId, location, phone, email)
+VALUES (3, 'jordan', '5552468', 'store3@example.com');
+
+INSERT INTO Store (storeId, location, phone, email)
+VALUES (4, 'egybt', '5551357', 'store4@example.com');
+
+INSERT INTO Store (storeId, location, phone, email)
+VALUES (5, 'syria', '5557890', 'store5@example.com');
+
+INSERT INTO OrderDetail (orderDetailId, orderId, productId, quantity, price)
+VALUES (1, 1, 2, 3, 29.99);
+
+INSERT INTO OrderDetail (orderDetailId, orderId, productId, quantity, price)
+VALUES (2, 1, 5, 1, 9.99);
+
+INSERT INTO OrderDetail (orderDetailId, orderId, productId, quantity, price)
+VALUES (3, 2, 3, 2, 15.99);
+
+INSERT INTO OrderDetail (orderDetailId, orderId, productId, quantity, price)
+VALUES (4, 3, 4, 4, 5.99);
+
+INSERT INTO OrderDetail (orderDetailId, orderId, productId, quantity, price)
+VALUES (5, 3, 1, 1, 12.99);
